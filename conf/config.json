@@ -1,0 +1,35 @@
+{
+    "daemon": {
+        "runasgroup": "root",
+        "runasuser": "root",
+        "concurrent": false,
+        "daemonize": true,
+        "mode": "single"
+    },
+    "addons": {
+        "scan": [
+            "addons/",
+            "vendors/"
+        ]
+    },
+    "log": {
+        "level": "info",
+        "loggers": [
+            {
+                "destination": "echo",
+                "key": "echo"
+            },
+            {
+                "destination": "filesystem",
+                "file": "log/ratjumps.log",
+                "key": "persist"
+            }
+        ]
+    },
+    "client": {
+        "type": "fuelrats",
+        "irc": {
+            "handler": "\\Kaecyra\\ChatBot\\Client\\FuelRats\\RatClient"
+        }
+    }
+}

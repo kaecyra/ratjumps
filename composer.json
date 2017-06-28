@@ -1,0 +1,23 @@
+{
+    "name": "kaecyra/ratjumps",
+    "description": "Automatically call rat jumps by parsing Elite Dangerous Journal.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Gunter",
+            "email": "tim@vanillaforums.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=7.0",
+        "kaecyra/chatbot": "^0.5",
+        "phergie/phergie-irc-client-react": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaecyra\\ChatBot\\": "src"
+        }
+    }
+}
